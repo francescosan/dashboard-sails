@@ -7,7 +7,7 @@ a [Sails v1](https://sailsjs.com) application
 - Sails.js (run `npm install sails -g`). Learn more here: https://0.12.sailsjs.com/get-started.
 
 ### Setup
-- Clone this repo `git clone xxxxx`.
+- Clone this repo `git clone https://github.com/francescosan/dashboard-sails.git`.
 - Change directory to the root of the project, then run `npm install`.
 - Run `sails lift`.
 - Visit **http://localhost:1337** in your browser.
