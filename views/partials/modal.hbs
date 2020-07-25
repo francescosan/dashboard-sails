@@ -1,0 +1,79 @@
+<!-- The Modal -->
+<div class="modal fade" id="addModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <center> <span class="modal-title">Add form</span></center>
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p class="text-intro">Insert a new Product</p>
+        <div class="form-div">
+          <form action="/create" method="post" id="createProduct">
+		  	<div class="alert succes alert-success">
+			<strong>Success!</strong> on create.
+			</div>
+			<div class="alert error alert-danger">
+			<strong>Fail!</strong> on create.
+			</div>
+			<input type="hidden" name="_csrf" value="{{_csrf}}" />
+            <div class="form-group">
+				<label>Title</label>
+              <input type="text" class="form-control" name="title" id="title" placeholder="">
+            </div>
+            <div class="form-group">
+				<label>Category</label>
+              <input type="text" class="form-control" name="category" id="category" placeholder="">
+            </div>
+            <div class="form-group">
+				<label>Description</label>
+				<textarea name="description" id="description" rows="10" cols="30" class="form-control"></textarea>
+<!--
+              <input type="text" class="form-control" id="description" placeholder="Description"> -->
+            </div>
+			<div class="form-group">
+				<label>Employee</label>
+              <input type="text" class="form-control" id="employee" name="employee" placeholder="">
+            </div>
+			<div class="row">
+				<div class="form-group col-md-6">
+				<label>Price</label>
+				<input type="number" class="form-control" name="price" id="price" placeholder="">
+				</div>
+				<div class="form-group col-md-6">
+					<label>Reviews</label>
+				<input type="number" class="form-control" id="reviews" name="reviews" placeholder="">
+				</div>
+			</div>
+           <button type="submit" id="addSubmitBtn" class="btn btn-warning btn-block submitbtn">Submit</button>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <p>You are about to delete one product, this procedure is irreversible.</p>
+                    <p>Do you want to proceed?</p>
+                    <p class="debug-url"></p>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-danger btn-ok">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>

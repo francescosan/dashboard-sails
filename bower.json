@@ -1,0 +1,21 @@
+{
+  "name": "dashboard-sails",
+  "description": "a Sails application",
+  "main": "app.js",
+  "authors": [
+    "FS"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
+  }
+}
