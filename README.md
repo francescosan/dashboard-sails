@@ -4,7 +4,7 @@ a [Sails v1](https://sailsjs.com) application
 
 ### Requirements
 - Node.js and NPM. Here's a link to get node.js/npm: [https://nodejs.org](https://nodejs.org).
-- Sails.js (run `npm install sails -g`). Learn more here: https://0.12.sailsjs.com/get-started.
+- Sails.js (run `npm install sails -g`). Learn more here: https://sailsjs.com/get-started.
 
 ### Setup
 - Clone this repo `git clone https://github.com/francescosan/dashboard-sails.git`.
